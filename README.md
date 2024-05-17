@@ -152,7 +152,7 @@
         <section id="gatos">
             <h2>Gatos</h2>
             <p>Los gatos son independientes y curiosos. Son perfectos para apartamentos pequeños.</p>
-            <img src="https://example.com/gatos.jpg" alt="Gato">
+            <img src="Adorable seal point Ragdoll Kitten #ragdoll #kitten.jfif" alt="Gato">
             <h3>Razas Populares</h3>
             <table>
                 <thead>
