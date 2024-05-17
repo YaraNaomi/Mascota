@@ -119,7 +119,7 @@
         <section id="perros">
             <h2>Perros</h2>
             <p>Los perros son conocidos por ser los mejores amigos del hombre. Son leales y protectores.</p>
-            <img src="https://example.com/perros.jpg" alt="Perro">
+            <img src="Q nombre le pondrias.jfif" alt="Perro">
             <h3>Razas Populares</h3>
             <table>
                 <thead>
