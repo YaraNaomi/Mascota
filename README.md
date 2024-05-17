@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #f8f8f8;
             color: #333;
+        
         }
 
         header {
@@ -18,7 +19,7 @@
             color: white;
             padding: 20px 0;
             text-align: center;
-            position: sticky;
+            position: static;
             top: 0;
             z-index: 1000;
         }
