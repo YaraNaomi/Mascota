@@ -185,7 +185,7 @@
         <section id="aves">
             <h2>Aves</h2>
             <p>Las aves son mascotas coloridas y algunas pueden aprender a hablar.</p>
-            <img src="https://example.com/aves.jpg" alt="Ave">
+            <img src="Animales con Colores Inesperados - Todo mascotas.jfif" alt="Ave">
             <h3>Tipos Populares</h3>
             <table>
                 <thead>
