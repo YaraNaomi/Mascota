@@ -84,16 +84,6 @@
             background-color: #f2f2f2;
         }
 
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: static;
-            bottom: 0;
-            width: 100%;
-        }
-
         a {
             color: #4CAF50;
             text-decoration: none;
@@ -229,8 +219,5 @@
             <p>Para más información sobre el cuidado de mascotas, visita <a href="https://www.aspca.org/pet-care" target="_blank">ASPCA Pet Care</a>.</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Las Mascotas</p>
-    </footer>
 </body>
 </html>
