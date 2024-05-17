@@ -131,7 +131,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Labrador Retriever</td>
+                        <td>Golden Retriever</td>
                         <td>Grande</td>
                         <td>10-12 años</td>
                     </tr>
@@ -152,7 +152,7 @@
         <section id="gatos">
             <h2>Gatos</h2>
             <p>Los gatos son independientes y curiosos. Son perfectos para apartamentos pequeños.</p>
-            <img src="Adorable seal point Ragdoll Kitten #ragdoll #kitten.jfif" alt="Gato">
+            <img src="Dave Hoover - DAVE’s CAT PIC OF THE DAY_ beautiful blue___.jfif" alt="Gato">
             <h3>Razas Populares</h3>
             <table>
                 <thead>
