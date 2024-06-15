@@ -1,223 +1,302 @@
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Las Mascotas</title>
+    <title>Delicias sin límites</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        
+            background-color: #ffffff;
         }
-
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
+            background-color: #fcd2f3;
+            color: #f5a2cf;
             text-align: center;
-            position: static;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        section {
-            background-color: white;
+            padding: 15px;
             margin-bottom: 20px;
+            position: relative;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+        .main-title {
+            font-family: 'Bubble Bobble';
+            font-size: 2em;
+            text-shadow: 2px 2px 2px #b68a51;
+        }
+        .sub-title {
+            font-family: 'Bubble Bobble', Times, serif;
+            font-size: 2em;
+            text-shadow: 2px 2px 2px #b68a51;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 80px;
+        }
+        .product {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            box-sizing: border-box;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product-details {
             padding: 20px;
+            text-align: center;
+        }
+        .product-details h2 {
+            margin-top: 0;
+        }
+        .hidden {
+            display: none;
+        }
+        .details-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        section h2 {
-            color: #4CAF50;
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
         }
-
-        section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+        .form-group {
             margin-bottom: 15px;
         }
-
-        table {
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
             width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 15px;
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-
-        th, td {
             padding: 10px;
-            text-align: left;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
         }
-
-        th {
-            background-color: #f2f2f2;
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
         }
-
-        a {
-            color: #4CAF50;
-            text-decoration: none;
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f5a2cf;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
         }
-
-        a:hover {
-            text-decoration: underline;
+        .form-group button:hover {
+            background-color: #e081af;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Las Mascotas</h1>
-        <nav>
-            <ul>
-                <li><a href="#perros">Perros</a></li>
-                <li><a href="#gatos">Gatos</a></li>
-                <li><a href="#aves">Aves</a></li>
-                <li><a href="#cuidados">Cuidados</a></li>
-            </ul>
-        </nav>
+        <img class="logo" src="Logo de Delicias sin límites.png" alt="Logo de Delicias sin límites">
+        <h1><span class="main-title">Delicias sin</span> <span class="sub-title">límites</span></h1>
     </header>
-    <main>
-        <section id="perros">
-            <h2>Perros</h2>
-            <p>Los perros son conocidos por ser los mejores amigos del hombre. Son leales y protectores.</p>
-            <img src="Q nombre le pondrias.jfif" alt="Perro">
-            <h3>Razas Populares</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Raza</th>
-                        <th>Tamaño</th>
-                        <th>Esperanza de Vida</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Golden Retriever</td>
-                        <td>Grande</td>
-                        <td>10-12 años</td>
-                    </tr>
-                    <tr>
-                        <td>Bulldog</td>
-                        <td>Mediano</td>
-                        <td>8-10 años</td>
-                    </tr>
-                    <tr>
-                        <td>Beagle</td>
-                        <td>Mediano</td>
-                        <td>12-15 años</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Para más información sobre perros, visita <a href="https://www.akc.org/dog-breeds/" target="_blank">American Kennel Club</a>.</p>
-        </section>
-        <section id="gatos">
-            <h2>Gatos</h2>
-            <p>Los gatos son independientes y curiosos. Son perfectos para apartamentos pequeños.</p>
-            <img src="Dave Hoover - DAVE’s CAT PIC OF THE DAY_ beautiful blue___.jfif" alt="Gato">
-            <h3>Razas Populares</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Raza</th>
-                        <th>Tamaño</th>
-                        <th>Esperanza de Vida</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Persa</td>
-                        <td>Mediano</td>
-                        <td>12-17 años</td>
-                    </tr>
-                    <tr>
-                        <td>Siames</td>
-                        <td>Mediano</td>
-                        <td>15-20 años</td>
-                    </tr>
-                    <tr>
-                        <td>Maine Coon</td>
-                        <td>Grande</td>
-                        <td>10-13 años</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Para más información sobre gatos, visita <a href="https://www.catfanciers.org/" target="_blank">Cat Fanciers' Association</a>.</p>
-        </section>
-        <section id="aves">
-            <h2>Aves</h2>
-            <p>Las aves son mascotas coloridas y algunas pueden aprender a hablar.</p>
-            <img src="Animales con Colores Inesperados - Todo mascotas.jfif" alt="Ave">
-            <h3>Tipos Populares</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tipo</th>
-                        <th>Tamaño</th>
-                        <th>Esperanza de Vida</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Periquito</td>
-                        <td>Pequeño</td>
-                        <td>5-10 años</td>
-                    </tr>
-                    <tr>
-                        <td>Cacatúa</td>
-                        <td>Mediano</td>
-                        <td>20-30 años</td>
-                    </tr>
-                    <tr>
-                        <td>Loro Gris</td>
-                        <td>Grande</td>
-                        <td>40-60 años</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Para más información sobre aves, visita <a href="https://www.parrots.org/" target="_blank">World Parrot Trust</a>.</p>
-        </section>
-        <section id="cuidados">
-            <h2>Cuidados</h2>
-            <p>Cada mascota tiene necesidades específicas. Es importante conocerlas para cuidarlas adecuadamente.</p>
-            <h3>Consejos Generales</h3>
-            <ul>
-                <li>Visita regular al veterinario.</li>
-                <li>Proporcionar una dieta adecuada.</li>
-                <li>Ejercicio y entretenimiento.</li>
-                <li>Mantener un ambiente limpio y seguro.</li>
-            </ul>
-            <p>Para más información sobre el cuidado de mascotas, visita <a href="https://www.aspca.org/pet-care" target="_blank">ASPCA Pet Care</a>.</p>
-        </section>
-    </main>
+
+    <div class="container">
+        <div class="product" onclick="showDetails('cacahuate-platano')">
+            <img src="galletacacahuateyplatano.jpeg" alt="Galleta de Cacahuate con Plátano">
+            <div class="product-details">
+                <h2>Galleta de Cacahuate con Plátano</h2>
+                <p>Precio: $20</p>
+                <p>Ingredientes: Cacahuate, plátano, amaranto, arándano, ajonjolí negro y blanco.</p>
+            </div>
+        </div>
+        <div class="product" onclick="showDetails('coco-canela')">
+            <img src="galletacoco.jpeg" alt="Galleta de Coco">
+            <div class="product-details">
+                <h2>Galleta de Coco</h2>
+                <p>Precio: $20</p>
+                <p>Ingredientes: Coco, canela, amaranto, nuez, ajonjolí blanco y negro.</p>
+            </div>
+        </div>
+        <div class="product" onclick="showDetails('manzana')">
+            <img src="galletasemillas.jpeg" alt="Galleta de Manzana">
+            <div class="product-details">
+                <h2>Galleta de Manzana</h2>
+                <p>Precio: $20</p>
+                <p>Ingredientes: Manzana, pepita de calabaza, amaranto, cacahuate, ajonjolí negro y blanco.</p>
+            </div>
+        </div>
+        <div class="product" onclick="showDetails('platano')">
+            <img src="galletaplatano.jpeg" alt="Galleta de Plátano">
+            <div class="product-details">
+                <h2>Galleta de Plátano</h2>
+                <p>Precio: $20</p>
+                <p>Ingredientes: Plátano, amaranto, ajonjolí negro y blanco, arándano</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-cacahuate-platano" class="hidden details-container">
+        <h2>Galleta de Cacahuate con Plátano</h2>
+        <p>Deliciosa galleta de Plátano con Cacahuate</p>
+        <p>Precio: $20</p>
+        <p>Contenido: 5 piezas por paquete</p>
+        <p>Ingredientes: Cacahuate, plátano, amaranto, arándano, ajonjolí negro y blanco</p>
+        <p class="availability available">Disponibilidad: Disponible</p>
+        <p>Opciones de envío: Envío estándar, Envío exprés</p>
+    </div>
+
+    <div id="details-coco-canela" class="hidden details-container">
+        <h2>Galleta de Coco</h2>
+        <p>Deliciosa galleta de Coco.</p>
+        <p>Precio: $20</p>
+        <p>Contenido: 5 piezas por paquete</p>
+        <p>Ingredientes: coco, canela, amaranto, nuez, ajonjolí blanco, ajonjolí negro</p>
+        <p class="availability available">Disponibilidad: Disponible</p>
+        <p>Opciones de envío: Envío estándar, Envío exprés</p>
+    </div>
+
+    <div id="details-manzana" class="hidden details-container">
+        <h2>Galleta de Manzana</h2>
+        <p>Deliciosa galleta de manzana con pepita de calabaza.</p>
+        <p>Precio: $20</p>
+        <p>Contenido: 5 piezas por paquete</p>
+        <p>Ingredientes: Manzana, pepita de calabaza, ajonjolí negro, ajonjolí blanco, amaranto</p>
+        <p class="availability available">Disponibilidad: Disponible</p>
+        <p>Opciones de envío: Envío estándar, Envío exprés</p>
+    </div>
+
+    <div id="details-platano" class="hidden details-container">
+        <h2>Galleta de Plátano</h2>
+        <p>Deliciosa galleta de Plátano.</p>
+        <p>Precio: $20</p>
+        <p>Contenido: 5 piezas por paquete</p>
+        <p>Ingredientes: Plátano, amaranto, ajonjolí negro y blanco, arándano</p>
+        <p class="availability available">Disponibilidad: Disponible</p>
+        <p>Opciones de envío: Envío estándar, Envío exprés</p>
+    </div>
+
+    <div class="form-container" id="order-form">
+        <h2>Formulario de Pedido</h2>
+        <form action="#" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="product">Producto:</label>
+                <select id="product" name="product" onchange="updateProductDetails()">
+                    <option value="cacahuate-platano">Galleta de Cacahuate con Plátano</option>
+                    <option value="coco-canela">Galleta de Coco</option>
+                    <option value="manzana">Galleta de Manzana</option>
+                    <option value="platano">Galleta de Plátano</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label for="shipping">Envío:</label>
+                <select id="shipping" name="shipping">
+                    <option value="standard">Envío estándar</option>
+                    <option value="express">Envío exprés</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje adicional:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar Pedido</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function showDetails(productId) {
+            // Ocultar todos los detalles primero
+            var detailsContainers = document.querySelectorAll('.details-container');
+            detailsContainers.forEach(function(container) {
+                container.classList.add('hidden');
+            });
+
+            // Mostrar los detalles del producto seleccionado
+            var selectedDetails = document.getElementById('details-' + productId);
+            if (selectedDetails) {
+                selectedDetails.classList.remove('hidden');
+            }
+        }
+
+        function updateProductDetails() {
+            var productId = document.getElementById('product').value;
+            // Ocultar todos los detalles primero
+            var detailsContainers = document.querySelectorAll('.details-container');
+            detailsContainers.forEach(function(container) {
+                container.classList.add('hidden');
+            });
+
+            // Mostrar los detalles del producto seleccionado en el formulario
+            var selectedDetails = document.getElementById('details-' + productId);
+            if (selectedDetails) {
+                selectedDetails.classList.remove('hidden');
+            }
+        }
+
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+
+            if (name.trim() === '' || email.trim() === '' || phone.trim() === '') {
+                alert('Por favor completa todos los campos.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 </html>
